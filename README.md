@@ -1,73 +1,100 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🧩 HR Workflow Designer
 
-Currently, two official plugins are available:
+A visual workflow builder that allows HR teams to design, configure, and simulate internal processes such as onboarding, approvals, and automation tasks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Built as part of a Full Stack Engineering Case Study, this project demonstrates strong frontend architecture, dynamic form handling, and workflow execution logic using modern React tools.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### Workflow Canvas
+- Drag-and-drop interface using React Flow
+- Create and connect nodes visually
+- Delete, edit, and manage nodes and edges
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Custom Node Types
+- Start Node – Entry point
+- Task Node – Human tasks
+- Approval Node – Role-based approvals
+- Automated Node – System actions
+- End Node – Completion
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Node Configuration Panel
+- Dynamic forms using React Hook Form
+- Supports key-value fields and dynamic inputs
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Workflow Engine
+- Graph-based state using Zustand
+- Real-time updates
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Mock API Layer
+- GET /automations
+- POST /simulate
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Workflow Simulation
+- JSON serialization
+- Step-by-step execution logs
+- Status and validation feedback
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🏗️ Architecture
+
+UI → State → Logic → API
+
+---
+
+## 📁 Folder Structure
+
+src/
+components/
+hooks/
+api/
+mocks/
+types/
+utils/
+
+---
+
+## 🛠️ Tech Stack
+
+- React + Vite
+- TypeScript
+- React Flow
+- Tailwind CSS
+- Zustand
+- React Hook Form
+- MSW
+
+---
+
+## ▶️ Run
+
+npm install  
+npm run dev  
+
+---
+
+## ⚡ Completed
+
+- Canvas
+- Nodes
+- Forms
+- Simulation
+- Validation
+
+---
+
+## 🔮 Future Improvements
+
+- Undo/Redo
+- Export/Import
+- Auto layout
+
+---
+
+## 👩‍💻 Author
+
+Nayana Dinesh
