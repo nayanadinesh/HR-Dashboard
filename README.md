@@ -5,6 +5,8 @@ A visual workflow builder that allows HR teams to design, configure, and simulat
 
 Built as part of a Full Stack Engineering Case Study, this project demonstrates strong frontend architecture, dynamic form handling, and workflow execution logic using modern React tools.
 
+Web Link: https://hr-dashboard-lake-eta.vercel.app/
+
 ---
 
 ## 🚀 Features
